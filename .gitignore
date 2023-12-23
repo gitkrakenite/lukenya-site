@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+axios.js
+package.json
+package-lock.json
+.gitignore
+
 # testing
 /coverage
 
