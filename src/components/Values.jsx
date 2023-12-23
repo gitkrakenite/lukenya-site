@@ -6,7 +6,7 @@ import { SiFuturelearn } from "react-icons/si";
 
 const Values = () => {
   return (
-    <div className="px-[2em]  xl:px-[5em] mt-[100px] ">
+    <div className="px-[10px] md:px-[2em] xl:px-[5em] mt-[100px] ">
       <div className="font-bold text-xl mb-[20px]">
         <h2
           className="font-bold text-2xl text-center"
@@ -22,7 +22,7 @@ const Values = () => {
         </h2> */}
       </div>
 
-      <div className="mt-[80px] flex gap-[20px]">
+      <div className=" mt-[50px] md:mt-[80px] flex flex-col lg:flex-row gap-[20px]">
         <div className="text-center bg-zinc-200 p-1 rounded-md">
           <div className="w-full flex justify-center mt-2">
             <HiOutlineCubeTransparent className="text-3xl text-red-500" />

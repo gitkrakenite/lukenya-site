@@ -20,13 +20,13 @@ const Hero = () => {
   // mobile stuff
 
   return (
-    <div className="mb-[30px]">
+    <div className="px-[10px] md:px-[2em]  xl:px-[5em] pt-[50px] pb-[10px]">
       {/* desktop Caraousel hidden md:block*/}
-      <div className=" px-[20px] pt-[80px]">
-        <Carousel indicators={false} prevIcon={false} nextIcon={false}>
-          <Carousel.Item interval={7000} className=" h-[45vh] md:h-[60vh]">
+      <div>
+        <Carousel prevIcon={false} nextIcon={false}>
+          <Carousel.Item interval={7000} className=" h-[45vh] md:h-[50vh]">
             <img
-              className="d-block w-100 h-[45vh] md:h-[60vh] object-cover rounded-xl"
+              className="d-block w-100 h-[45vh] md:h-[50vh] object-cover rounded-xl"
               src="https://images.pexels.com/photos/7181493/pexels-photo-7181493.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="First slide"
             />
@@ -58,8 +58,8 @@ const Hero = () => {
           </Carousel.Item>
 
           {/* second */}
-          <Carousel.Item interval={7000} className=" h-[45vh] md:h-[60vh]">
-            <div className="d-block w-100 h-[45vh] md:h-[60vh] object-cover rounded-xl bg-red-500" />
+          <Carousel.Item interval={7000} className=" h-[45vh] md:h-[50vh]">
+            <div className="d-block w-100 h-[45vh] md:h-[50vh] object-cover rounded-xl bg-red-500" />
             <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.8)] rounded-xl" />
 
             <Carousel.Caption className=" h-full flex  items-center">
@@ -88,9 +88,9 @@ const Hero = () => {
           </Carousel.Item>
 
           {/* third */}
-          <Carousel.Item interval={7000} className=" h-[45vh] md:h-[60vh]">
+          <Carousel.Item interval={7000} className=" h-[45vh] md:h-[50vh]">
             <img
-              className="d-block w-100 h-[45vh] md:h-[60vh] object-cover rounded-xl"
+              className="d-block w-100 h-[45vh] md:h-[50vh] object-cover rounded-xl"
               src="https://images.pexels.com/photos/14456845/pexels-photo-14456845.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="First slide"
             />
