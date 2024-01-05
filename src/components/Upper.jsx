@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../assets/logo.png";
 
 const Upper = () => {
+  const [images, setImages] = useState([
+    /* your array of images */
+    "https://images.pexels.com/photos/8948347/pexels-photo-8948347.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/7293100/pexels-photo-7293100.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/220365/pexels-photo-220365.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/8042461/pexels-photo-8042461.jpeg?auto=compress&cs=tinysrgb&w=600",
+  ]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 6000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <div className=" px-[10px] md:px-[2em]  xl:px-[5em] mt-[100px] ">
       <div className="flex flex-col lg:flex-row gap-[30px] md:gap-[50px]">
@@ -41,11 +60,19 @@ const Upper = () => {
 
         {/* imgside */}
         <div className=" flex-[0.5] lg:flex-[0.4] relative">
-          <img
+          {/* <img
             src="https://images.pexels.com/photos/8948347/pexels-photo-8948347.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
             className="md:w-[90%] object-contain rounded-lg"
-          />
+          /> */}
+
+          {currentIndex < images.length ? (
+            <img
+              src={images[currentIndex]}
+              alt="Slideshow"
+              className="md:w-[90%] object-contain rounded-lg"
+            />
+          ) : null}
 
           <img
             src="https://images.pexels.com/photos/220365/pexels-photo-220365.jpeg?auto=compress&cs=tinysrgb&w=600"

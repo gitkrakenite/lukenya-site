@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [active, setActive] = useState("");
 
   const Navlinks = [
     { id: 1, title: "Home", goTo: "/" },
@@ -38,9 +39,13 @@ const Navbar = () => {
               {Navlinks.map((item) => (
                 <li
                   key={item.id}
-                  className="hover:text-red-500 text-inherit no-underline cursor-pointer"
+                  className={`hover:text-red-500 text-inherit no-underline cursor-pointer`}
                 >
-                  <Link to={item.goTo} className="text-inherit">
+                  <Link
+                    to={item.goTo}
+                    onClick={() => setActive(item.title)}
+                    className="text-inherit"
+                  >
                     {item.title}
                   </Link>
                 </li>
