@@ -47,14 +47,14 @@ const Projects = () => {
 
         {/*  */}
         <div className="mt-[50px] flex justify-end">
-          <Link className="text-inherit">
+          {/* <Link className="text-inherit">
             <div className="flex items-center gap-[10px]">
               <p>All Projects</p>
               <p>
                 <MdOutlineArrowForward />
               </p>
             </div>
-          </Link>
+          </Link> */}
         </div>
 
         <div className="flex gap-[10px] overflow-x-scroll w-full prompt pb-2 ">
