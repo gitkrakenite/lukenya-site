@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineEye, AiOutlineLike, AiOutlinePhone } from "react-icons/ai";
 import { MdOutlineArrowForward } from "react-icons/md";
@@ -112,6 +112,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
+
         {/*  */}
       </div>
     </div>

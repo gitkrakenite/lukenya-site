@@ -57,7 +57,7 @@ const Involved = () => {
             <div className="flex flex-col-reverse md:flex-row justify-evenly gap-[30px] items-center mt-[20px]">
               {/* img side */}
               <div className="flex-[0.5]">
-                <h2 className="mb-[40px]">Lukenya Compassion Connect</h2>
+                <h2 className="mb-[20px]">Lukenya Compassion Connect</h2>
                 <p>
                   Our doors are always open to like-minded individuals,
                   organizations, and businesses that share our passion for
@@ -71,8 +71,12 @@ const Involved = () => {
                   and empower those in need.
                 </p>
 
-                <p className="">
-                  <a href="mailto:" className="text-inherit">
+                <p className="text-center mt-[40px]">
+                  <a
+                    href="mailto:"
+                    className="text-inherit text-center p-2"
+                    style={{ border: "1px solid red", borderRadius: "10px" }}
+                  >
                     Get In Touch Now
                   </a>
                 </p>

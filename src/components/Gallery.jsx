@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 export default class Gallery extends Component {
   render() {
@@ -28,64 +29,65 @@ export default class Gallery extends Component {
         >
           Click To Access Our Gallery
         </h2>
-        <Slider {...settings} className="w-[100%] overflow-x-hidden">
-          <div>
-            <img
-              src="https://images.pexels.com/photos/10638071/pexels-photo-10638071.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt=""
-            />
-          </div>
-          <div>
-            <a href="#" target="_blank">
+
+        <Link to="/gallery">
+          <Slider {...settings} className="w-[100%] overflow-x-hidden">
+            <div>
+              <img
+                src="https://images.pexels.com/photos/10638071/pexels-photo-10638071.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </div>
+            <div>
               <img
                 src="https://images.pexels.com/photos/8927014/pexels-photo-8927014.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
               />
-            </a>
-          </div>
-          <div>
-            <img
-              src="https://images.pexels.com/photos/2600339/pexels-photo-2600339.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://images.pexels.com/photos/6718450/pexels-photo-6718450.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://images.pexels.com/photos/8419169/pexels-photo-8419169.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://images.pexels.com/photos/4001269/pexels-photo-4001269.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://images.pexels.com/photos/5428012/pexels-photo-5428012.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://images.pexels.com/photos/5212331/pexels-photo-5212331.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt=""
-            />
-          </div>
-        </Slider>
+            </div>
+            <div>
+              <img
+                src="https://images.pexels.com/photos/2600339/pexels-photo-2600339.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://images.pexels.com/photos/6718450/pexels-photo-6718450.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://images.pexels.com/photos/8419169/pexels-photo-8419169.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://images.pexels.com/photos/4001269/pexels-photo-4001269.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://images.pexels.com/photos/5428012/pexels-photo-5428012.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://images.pexels.com/photos/5212331/pexels-photo-5212331.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+            </div>
+          </Slider>
+        </Link>
       </div>
     );
   }

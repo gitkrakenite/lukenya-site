@@ -9,6 +9,8 @@ import "slick-carousel/slick/slick-theme.css";
 import About from "./pages/About";
 import Involved from "./pages/Involved";
 
+import AllGallery from "./components/AllGallery";
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/get-involved" element={<Involved />} />
+          <Route path="/gallery" element={<AllGallery />} />
         </Routes>
       </BrowserRouter>
     </div>
