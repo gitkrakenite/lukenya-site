@@ -195,7 +195,7 @@ const AllGallery = () => {
           <Navbar />
           <div className="px-[10px] md:px-[2em] xl:px-[5em] mt-[100px] pb-[20px]">
             <h2>Our Gallery</h2>
-            <p className="w-[30%]">
+            <p className=" w-full  md:w-[50%] lg:w-[30%]">
               In every picture, there is a story to be told, a memory to be
               cherished, and a moment to be remembered. Our gallery is a
               testament to the beautiful tapestry of shared experiences and the
@@ -210,11 +210,6 @@ const AllGallery = () => {
 
       {/* wrapper */}
       <div className="px-[10px] sm:px-[3em] lg:px-[4em] pt-3">
-        {/* topbar */}
-        {/* {!searchText && (
-          
-        )} */}
-
         {loading ? (
           <>
             <div className="h-[70vh] w-full flex justify-center items-center">

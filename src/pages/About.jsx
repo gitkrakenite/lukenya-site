@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Values from "../components/Values";
+import { FaRegHandPointRight } from "react-icons/fa";
 
 const About = () => {
   // className="px-[10px] md:px-[2em] xl:px-[5em] mt-[50px] pb-[20px]"
@@ -33,6 +34,31 @@ const About = () => {
       role: "Graphics Designer",
       profile:
         "https://images.pexels.com/photos/1322481/pexels-photo-1322481.jpeg?auto=compress&cs=tinysrgb&w=600",
+    },
+  ];
+
+  const dummyValues = [
+    {
+      id: 1,
+      mainText: "Integrity",
+      subText:
+        "- Honesty, truthfulness, and consistency in actions and principles.",
+    },
+    {
+      id: 2,
+      mainText: "Accountability",
+      subText: "- Responsibile and answerable for our actions and decisions.",
+    },
+    {
+      id: 3,
+      mainText: "Partnership",
+      subText: "- Collaborative alliance, mutual support and shared goals",
+    },
+    {
+      id: 4,
+      mainText: "Inclusivity",
+      subText:
+        "- Embracing diversity, fostering equality, and ensuring broad participation.",
     },
   ];
 
@@ -159,6 +185,45 @@ const About = () => {
           </div>
         </div>
         {/*  */}
+      </div>
+
+      {/* what drives us */}
+
+      <div className="px-[10px] md:px-[2em] xl:px-[5em] mt-[50px] pb-[20px] flex flex-col md:flex-row justify-evenly items-center gap-[4em]">
+        {/* img side */}
+        <div className="relative hidden sm:block">
+          <div className="w-[180px] h-[180px] relative bg-red-500 rounded-full"></div>
+          <img
+            src="https://images.pexels.com/photos/12509253/pexels-photo-12509253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            className="w-[200px] h-[200px] object-cover rounded-full absolute z-10 top-[10px] left-[20px]"
+          />
+        </div>
+        {/* text side */}
+        <div className="">
+          <h2>What Drives Us</h2>
+          <p>The following values are the light to our path</p>
+
+          <div>
+            <ul className="mt-[30px]">
+              {dummyValues.map((item) => (
+                <li
+                  className="flex flex-col md:flex-row items-start md:items-center gap-[20px] mt-[20px]"
+                  key={item.id}
+                >
+                  <div className="flex gap-[10px] items-start md:items-center">
+                    <FaRegHandPointRight className=" text-xl sm:text-3xl text-red-500" />
+                    <span className="text-red-500 ">{item.mainText}</span>
+                  </div>
+
+                  <div>
+                    <span>{item.subText}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

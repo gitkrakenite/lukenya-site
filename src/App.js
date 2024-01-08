@@ -8,8 +8,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import About from "./pages/About";
 import Involved from "./pages/Involved";
-
 import AllGallery from "./components/AllGallery";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/get-involved" element={<Involved />} />
           <Route path="/gallery" element={<AllGallery />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>
     </div>
