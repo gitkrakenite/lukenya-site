@@ -9,6 +9,7 @@ import GetInvolved from "../components/GetInvolved";
 import Partners from "../components/Partners";
 import Testimonials from "../components/Testimonials";
 import Gallery from "../components/Gallery";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Partners />
       <Testimonials />
       <Gallery />
+      <Contact />
     </div>
   );
 };

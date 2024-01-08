@@ -14,7 +14,7 @@ const Navbar = () => {
     { id: 3, title: "Get Involved", goTo: "/get-involved" },
     { id: 4, title: "Gallery", goTo: "/gallery" },
     { id: 5, title: "Blog", goTo: "/blog" },
-    { id: 6, title: "Contact Us", goTo: "/contact-us" },
+    // { id: 6, title: "Contact Us", goTo: "/contact-us" },
   ];
 
   return (

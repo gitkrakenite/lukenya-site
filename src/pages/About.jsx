@@ -225,6 +225,8 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* contact us */}
     </div>
   );
 };
